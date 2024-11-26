@@ -4,7 +4,7 @@
     </div>
 
     <!-- scroll top -->
-    <a href="#home" class="scroll-top">
+    <a href="#h" class="scroll-top">
         <i class='bx bx-up-arrow-alt' ></i>
     </a>
 </footer>

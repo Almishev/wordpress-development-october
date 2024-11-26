@@ -4,7 +4,7 @@
   */
 
 ?>
-
+<span id="h"></span>
 <?php get_header(); ?>
 
 <!-- home section -->
@@ -24,6 +24,5 @@
     get_template_part('partials/contact');
 ?>
 
-</main>
 
 <?php get_footer(); ?>

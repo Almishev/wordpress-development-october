@@ -112,7 +112,6 @@ function add_newsletter_admin_menu() {
 add_action('admin_menu', 'add_newsletter_admin_menu');
 
 // Функция за показване на списък с абонати
-// Функция за показване на списък с абонати
 function display_newsletter_subscribers() {
     global $wpdb;
     

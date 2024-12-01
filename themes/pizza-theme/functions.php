@@ -70,7 +70,9 @@ function custom_register_sidebars() {
 }
 add_action('widgets_init', 'custom_register_sidebars');
 
+
 // Функция за обработка на AJAX заявка
+/*
 function save_newsletter_subscription() {
     global $wpdb;
 
@@ -147,5 +149,5 @@ function display_newsletter_subscribers() {
 }
 
 
-
+*/
 ?>

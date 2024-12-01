@@ -29,6 +29,7 @@ sr.reveal('.home-img', { delay: 200, origin: 'right' });
 sr.reveal('.container, .about, .menu, .contact', { delay: 200, origin: 'bottom' });
 
 // jQuery логика за AJAX заявка
+/*
 jQuery(document).ready(function ($) {
     $('#email-form').on('submit', function (e) {
         e.preventDefault(); // Предотвратяване на презареждането на страницата
@@ -69,3 +70,4 @@ jQuery(document).ready(function ($) {
         });
     });
 });
+*/

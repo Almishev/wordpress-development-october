@@ -1,53 +1,96 @@
+/* Стилове за контейнера на формата */
 .restaurant-booking-form {
     margin: 120px auto 0; 
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    max-width: 400px;
+    max-width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Стилове за етикетите на формата */
 .restaurant-booking-form label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    color: #333;
 }
 
-.restaurant-booking-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.restaurant-booking-form .button {
-    background-color: #ff9100;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-/* Styling for the select element */
+/* Стилове за полетата на формата (input и select) */
+.restaurant-booking-form input,
 .restaurant-booking-form select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Фокус ефект за полета */
+.restaurant-booking-form input:focus,
+.restaurant-booking-form select:focus {
+    border-color: #ff9100;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 145, 0, 0.6);
+}
+
+
+/* Стилове за submit бутон */
+.restaurant-booking-form input[type="submit"] {
+    background-color: #ff9100;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block; /* За да бъде бутонът блоков елемент */
+    width: 100%; /* За да заема целия размер на контейнера */
+}
+
+/* Ховър ефект за бутон */
+.restaurant-booking-form input[type="submit"]:hover {
+    background-color: #e68100;
+}
+
+/* Стилове за съобщения за грешки */
+.restaurant-booking-form p {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+/* Стилове за селекта */
+.restaurant-booking-form select {
     background-color: #fff;
     font-size: 16px;
 }
 
-.restaurant-booking-form select option {
-    padding: 10px;
-    background-color: #fff;
-    font-size: 16px;
-}
+/* Мобилна адаптивност */
+@media (max-width: 600px) {
+    .restaurant-booking-form {
+        margin-top: 20px;
+        padding: 20px;
+        max-width: 100%;
+    }
 
-.restaurant-booking-form select option:hover {
-    background-color: #f1f1f1;
+    .restaurant-booking-form input,
+    .restaurant-booking-form select {
+        font-size: 14px;
+    }
+
+    .restaurant-booking-form input[type="submit"] {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
 }

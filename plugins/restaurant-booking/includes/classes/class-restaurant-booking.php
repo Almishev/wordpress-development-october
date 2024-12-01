@@ -3,8 +3,13 @@ class Restaurant_Booking {
 
 public static function handle_booking() {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $meal = sanitize_text_field($_POST['meal']);
-        $date = sanitize_text_field($_POST['date']);
+       
+        // Проверка и обработка на "meal" и "date"
+$meal = isset($_POST['meal']) ? sanitize_text_field($_POST['meal']) : '';  // Проверка за meal
+$date = isset($_POST['date']) ? sanitize_text_field($_POST['date']) : '';  // Проверка за date
+
+// След това използвайте тези променливи в SQL заявките или обработката
+
         $available_lunch_tables = get_option('restaurant_tables_lunch', 10);
         $available_dinner_tables = get_option('restaurant_tables_dinner', 10);
 

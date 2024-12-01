@@ -40,11 +40,12 @@
 						<p>Свинско чоризо, от животни на фермерите в региона подбрано за вас, опитайте и оценете.</p>
 					</div>
 				</div>
+			
 				<h3>Абонирайте се за бюлетин:</h3>
 				<form id="email-form" action="" method="POST">
 				<input type="text" id="name" name="name" placeholder="Въведете вашето име" required> <br>
                  <input type="email" id="email" name="email" placeholder="Въведете вашия имейл" required><br>
-                 <button type="submit"><b>Изпрати</b></button>
+                 <button type="submit"  class="submit-button"><b>Изпрати</b></button>
                  <div id="response-message"></div> 
                </form>
 			</div>

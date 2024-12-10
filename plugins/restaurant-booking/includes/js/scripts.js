@@ -51,7 +51,7 @@
                 errorText += 'Моля, изберете обяд или вечеря.\n';
             }
 
-            // Ако има грешки, спираме изпращането и показваме съобщение
+            
             if (!valid) {
                 e.preventDefault(); // Спира изпращането на формата
                 errorMessage.textContent = errorText;

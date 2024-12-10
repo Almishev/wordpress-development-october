@@ -530,11 +530,47 @@ header.sticky{
     display: block; /* Центрира изображението */
 }
 
-/* Стилове за изображението в категорията */
+
 .category .post-thumbnail img {
     width: 100%; /* 100% за категория */
     height: auto;
 }
+.custom-footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column; 
+    padding: 20px;          
+    background-color: #ea7f05; 
+}
+
+
+.last-text {
+    display: flex;
+    flex-direction: column; /* Подрежда текста и иконите вертикално */
+    align-items: center;    /* Центрира съдържанието хоризонтално */
+    gap: 10px;              /* Разстояние между текста и иконите */
+    text-align: center;     /* Центрира текста вътре в параграфа */
+}
+
+.social-custum-icons {
+    text-align: center; /* Центрира съдържанието хоризонтално */
+    margin-top: 20px;
+    display: inline-block; /* Задава елементите в един ред, ако са вградено блокови */
+    gap: 15px;
+}
+
+.social-custum-icons a {
+    color: #555;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-custum-icons a:hover {
+    color: #f39c12;
+}
+
 
 
 

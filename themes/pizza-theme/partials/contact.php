@@ -23,15 +23,18 @@
 				</div>
 			</div>
 			  
-		
+		<!--
                  
             <div class="contact-content">
 				<h4>Последвайте ни</h4>
+				
 				<div class="social-icons">
 					<a href="https://www.facebook.com/pirinpixel/" class="social-icons-hover"><i class='bx bxl-facebook'></i></a>
 					<a href="https://www.linkedin.com/in/anton-almishev-596aa5262/" class="social-icons-hover"><i class='bx bxl-linkedin'></i></a>
 					<a href="https://www.instagram.com/almishev.anton/" class="social-icons-hover"><i class='bx bxl-instagram'></i></a>
 				</div>
+					
 			</div>
+			-->
 
 		</section>

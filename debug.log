@@ -10,3 +10,20 @@
 [09-Dec-2024 12:40:32 UTC]   Automatic theme updates starting...
 [09-Dec-2024 12:40:32 UTC]   Automatic theme updates complete.
 [09-Dec-2024 12:40:32 UTC] Automatic updates complete.
+[10-Dec-2024 14:44:42 UTC] Automatic updates starting...
+[10-Dec-2024 14:44:43 UTC]   Automatic plugin updates starting...
+[10-Dec-2024 14:44:43 UTC]   Automatic plugin updates complete.
+[10-Dec-2024 14:44:43 UTC]   Automatic theme updates starting...
+[10-Dec-2024 14:44:43 UTC]   Automatic theme updates complete.
+[10-Dec-2024 14:44:43 UTC] Automatic updates complete.
+[10-Dec-2024 16:05:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-content\themes\pizza-theme\partials\about.php:4
+Stack trace:
+#0 C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-includes\template.php(812): require()
+#1 C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-includes\template.php(745): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-content\themes\pizza-theme\templates\about.php(14): get_template_part('partials/about')
+#4 C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress-6.6.2\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-content\themes\pizza-theme\partials\about.php on line 4

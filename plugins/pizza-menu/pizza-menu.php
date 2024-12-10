@@ -13,7 +13,7 @@
 
 // Регистриране на персонализиран тип запис за пици
 function create_pizza_post_type() {
-    register_post_type( 'pizza_item', // Променено от 'menu_item' на 'pizza_item'
+    register_post_type( 'pizza_item', 
         array(
             'labels' => array(
                 'name' => 'Продукти Пици',

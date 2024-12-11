@@ -1,12 +1,21 @@
 <section class="contact" id="contact">
 			<div class="main-contact">
-				<div class="contact-content">
-				
-				<h4>Services</h4>
-					
-				
-				</div>
-
+            
+			<div class="content-text">
+    <?php if (is_active_sidebar('services-sidebar')) : ?>
+        <aside id="services-sidebar" class="widget-area">
+            <?php dynamic_sidebar('services-sidebar'); ?>
+        </aside>
+    <?php else : ?>
+        <h4>Услуги</h4>
+        <ul>
+            <li>Поръчки по телефона</li>
+            <li>Доставка до място</li>
+            <li>Организира кетеринг</li>
+            <li>Дългосрочно партньорство</li>
+        </ul>
+    <?php endif; ?>
+</div>
 
                 <div class="contact-content">
 					
@@ -19,7 +28,11 @@
 
                 <div class="contact-content">
 				 
-				   <?php get_sidebar(); ?>
+				<?php if (is_active_sidebar('sidebar-1')) : ?>
+    <aside id="secondary-sidebar" class="secondary-sidebar widget-area">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+    </aside>
+<?php endif; ?>
 				</div>
 			</div>
 			  

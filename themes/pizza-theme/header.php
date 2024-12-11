@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
-
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,14 +42,18 @@ wp_nav_menu(array(
 ?>
 
        </ul>
+	   <div class="h-icons">
+    <ul class="navbar">
+        <li>
+            <a href="tel:<?php echo esc_attr(get_theme_mod('phone_number', '+359877382224')); ?>" style="color: black;">
+                <?php echo esc_html(get_theme_mod('phone_number', '+359877382224')); ?>
+            </a>
+        </li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+</div>
 
 
-		<div class="h-icons">
-			<ul class="navbar">
-			  <li><a href="tel:+359877382224"  style="color: black;">0877382224</a></li>
-			</ul>
-			<div class="bx bx-menu" id="menu-icon"></div>
-		</div>
 
 	</header>
 

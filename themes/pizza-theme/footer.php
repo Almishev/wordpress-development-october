@@ -22,4 +22,9 @@
             <?php endif; ?>
         </div>
     </div>
+
+    
+     <a href="#h" class="scroll-top">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>
 </footer>

@@ -22,5 +22,4 @@ function pizza_theme_child_add_sidebar() {
 }
 add_action('widgets_init', 'pizza_theme_child_add_sidebar');
 
-
 ?>

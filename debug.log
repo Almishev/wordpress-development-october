@@ -27,3 +27,13 @@ Stack trace:
 #6 C:\xampp\htdocs\wordpress-6.6.2\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
 #7 {main}
   thrown in C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-content\themes\pizza-theme\partials\about.php on line 4
+[10-Dec-2024 20:52:58 UTC] Automatic updates starting...
+[10-Dec-2024 20:52:59 UTC]   Automatic plugin updates starting...
+[10-Dec-2024 20:52:59 UTC]   Automatic plugin updates complete.
+[10-Dec-2024 20:53:00 UTC] Automatic updates complete.
+[10-Dec-2024 21:05:44 UTC] PHP Deprecated:  Function get_page_by_title is <strong>deprecated</strong> since version 6.2.0! Use WP_Query instead. in C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-includes\functions.php on line 6114
+[10-Dec-2024 21:05:44 UTC] PHP Deprecated:  Function get_page_by_title is <strong>deprecated</strong> since version 6.2.0! Use WP_Query instead. in C:\xampp\htdocs\wordpress-6.6.2\wordpress\wp-includes\functions.php on line 6114
+[11-Dec-2024 10:23:03 UTC] Automatic updates starting...
+[11-Dec-2024 10:23:04 UTC]   Automatic plugin updates starting...
+[11-Dec-2024 10:23:04 UTC]   Automatic plugin updates complete.
+[11-Dec-2024 10:23:05 UTC] Automatic updates complete.

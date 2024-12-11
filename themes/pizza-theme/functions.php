@@ -67,8 +67,24 @@ function custom_register_sidebars() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ));
+
+
 }
 add_action('widgets_init', 'custom_register_sidebars');
+
+function register_services_sidebar() {
+    register_sidebar(array(
+        'name'          => __('Services Sidebar', 'pizza'),
+        'id'            => 'services-sidebar',
+        'description'   => __('Sidebar за услуги', 'pizza'),
+        'before_widget' => '<div class="services-widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>',
+    ));
+}
+add_action('widgets_init', 'register_services_sidebar');
+
 
 
 function pizza_footer_customizer($wp_customize) {
@@ -192,7 +208,6 @@ function custom_customize_register($wp_customize) {
 add_action('customize_register', 'custom_customize_register');
 
 
-// Добавяне на опции в Customizer за секция Home
 function pizza_customize_register($wp_customize) {
     // Заглавие на секцията
     $wp_customize->add_section('pizza_home_section', array(
@@ -244,13 +259,13 @@ function pizza_customize_register($wp_customize) {
         'settings' => 'pizza_home_image',
     )));
 
-       // Секция "Съставките"
+    
        $wp_customize->add_section('pizza_ingredients_section', array(
         'title' => __('Ingredients Section', 'pizza'),
         'priority' => 35,
     ));
 
-    // Заглавие
+    
     $wp_customize->add_setting('pizza_ingredients_title', array(
         'default' => 'Съставките, които правят разликата',
         'transport' => 'refresh',
@@ -353,6 +368,30 @@ function pizza_customize_register($wp_customize) {
     )));
 }
 add_action('customize_register', 'pizza_customize_register');
+
+
+
+function customize_phone_number($wp_customize) {
+    $wp_customize->add_section('contact_section', array(
+        'title' => __('Contact Information', 'theme_text_domain'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('phone_number', array(
+        'default' => '+359877382224',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('phone_number', array(
+        'label' => __('Phone Number', 'theme_text_domain'),
+        'section' => 'contact_section',
+        'settings' => 'phone_number',
+        'type' => 'text',
+    ));
+}
+add_action('customize_register', 'customize_phone_number');
+
+
 
 
 ?>
